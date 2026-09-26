@@ -92,7 +92,44 @@ Para orientar el estudio de los datos se plantearon las siguientes preguntas:
 
 El flujo desarrollado para el análisis fue:
 
----
+API Open-Meteo
+        ↓
+Adquisición de datos mediante Python
+        ↓
+Procesamiento con Pandas
+        ↓
+Construcción del DataFrame
+        ↓
+Almacenamiento en archivo CSV
+        ↓
+Visualización mediante Matplotlib
+        ↓
+Análisis e interpretación de resultados
+
+
+El proceso desarrollado permitió transformar datos meteorológicos obtenidos desde una fuente externa en información estructurada para su posterior análisis.
+
+Las etapas principales del trabajo fueron:
+
+**1. Adquisición de datos**
+
+Se realizó la conexión con la API de Open-Meteo mediante Python para obtener información meteorológica horaria de Cuenca, Ecuador.
+
+**2. Procesamiento de datos**
+
+Los datos obtenidos fueron organizados utilizando Pandas, permitiendo construir un DataFrame para facilitar su análisis.
+
+**3. Almacenamiento de datos**
+
+La información procesada fue almacenada en un archivo CSV para conservar los datos utilizados en el análisis.
+
+**4. Visualización de datos**
+
+Se generaron gráficos mediante Matplotlib para analizar el comportamiento de las variables meteorológicas.
+
+**5. Análisis de resultados**
+
+Finalmente, se interpretaron los datos obtenidos y se respondieron las preguntas planteadas mediante los resultados estadísticos y visualizaciones generadas.
 
 # 7. Adquisición y procesamiento de datos
 
