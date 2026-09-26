@@ -47,6 +47,27 @@ Se realizaron cinco gráficas utilizando Matplotlib:
 3. Precipitación horaria.
 4. Velocidad del viento horaria.
 5. Relación entre temperatura y humedad relativa.
+## Visualizaciones generadas
+
+### Temperatura horaria
+
+![Temperatura](graficas/01_temperatura.png)
+
+### Humedad relativa horaria
+
+![Humedad](graficas/02_humedad.png)
+
+### Precipitación horaria
+
+![Precipitación](graficas/03_precipitacion.png)
+
+### Velocidad del viento horaria
+
+![Velocidad del viento](graficas/04_viento.png)
+
+### Relación entre temperatura y humedad
+
+![Relación temperatura humedad](graficas/05_temperatura_humedad.png)
 
 ## Resultados
 
