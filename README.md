@@ -170,9 +170,13 @@ Las visualizaciones desarrolladas fueron:
 
 # 9. Visualizaciones generadas
 
+Para analizar el comportamiento de las variables meteorológicas se generaron cinco visualizaciones utilizando Matplotlib. Estas gráficas permiten identificar tendencias, variaciones y posibles relaciones entre las variables analizadas.
+
+---
+
 ## 9.1 Temperatura horaria
 
-La gráfica permite observar la variación de la temperatura durante el período analizado.
+La gráfica muestra la variación de la temperatura durante el período analizado. Permite identificar los momentos del día con mayores y menores valores térmicos, evidenciando los cambios de temperatura entre horas.
 
 ![Temperatura](graficas/01_temperatura.png)
 
@@ -180,7 +184,7 @@ La gráfica permite observar la variación de la temperatura durante el período
 
 ## 9.2 Humedad relativa horaria
 
-Esta visualización muestra el comportamiento de la humedad relativa durante las diferentes horas del período estudiado.
+Esta visualización representa el comportamiento de la humedad relativa a lo largo del tiempo. Permite observar cómo la humedad presenta variaciones durante el día y su comportamiento respecto a los cambios de temperatura.
 
 ![Humedad](graficas/02_humedad.png)
 
@@ -188,7 +192,7 @@ Esta visualización muestra el comportamiento de la humedad relativa durante las
 
 ## 9.3 Precipitación horaria
 
-La gráfica permite identificar los momentos donde se presentaron mayores niveles de precipitación.
+La gráfica permite identificar los períodos donde se registraron precipitaciones y observar la distribución de la lluvia durante los siete días analizados. Los valores más altos representan los momentos con mayor acumulación de precipitación.
 
 ![Precipitación](graficas/03_precipitacion.png)
 
@@ -196,7 +200,7 @@ La gráfica permite identificar los momentos donde se presentaron mayores nivele
 
 ## 9.4 Velocidad del viento horaria
 
-Esta gráfica representa el comportamiento de la velocidad del viento durante el período analizado.
+Esta gráfica muestra la variación de la velocidad del viento durante el período de estudio. Permite analizar los cambios en la intensidad del viento a diferentes horas.
 
 ![Velocidad del viento](graficas/04_viento.png)
 
@@ -204,11 +208,9 @@ Esta gráfica representa el comportamiento de la velocidad del viento durante el
 
 ## 9.5 Relación entre temperatura y humedad relativa
 
-Mediante un gráfico de dispersión se analizó la relación existente entre temperatura y humedad relativa.
+Mediante un gráfico de dispersión se analiza la relación entre la temperatura y la humedad relativa. La distribución de los puntos permite identificar el comportamiento conjunto de ambas variables y evaluar la existencia de una relación entre ellas.
 
 ![Relación temperatura humedad](graficas/05_temperatura_humedad.png)
-
----
 
 # 10. Resultados obtenidos
 
