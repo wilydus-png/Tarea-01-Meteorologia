@@ -2,13 +2,21 @@
 
 ## Maestría en Ciencia de Datos
 
-## 1. Descripción del proyecto
+---
 
-Este proyecto tiene como finalidad realizar un flujo completo de análisis de datos meteorológicos mediante la adquisición de información desde una API pública, procesamiento de datos utilizando Python y generación de visualizaciones para interpretar patrones climáticos.
+# 1. Descripción del proyecto
 
-Para el desarrollo del trabajo se utilizó la API de **Open-Meteo**, obteniendo información meteorológica horaria de la ciudad de **Cuenca, Ecuador**, durante un período de siete días.
+Este proyecto tiene como objetivo desarrollar un flujo completo de análisis de datos meteorológicos mediante la adquisición de información desde una API pública, procesamiento de datos utilizando Python y generación de visualizaciones para interpretar el comportamiento de diferentes variables climáticas.
 
-El análisis contempla la extracción, transformación, almacenamiento y visualización de datos, aplicando herramientas utilizadas habitualmente en procesos de análisis de datos.
+Para el desarrollo del trabajo se utilizó la API gratuita **Open-Meteo**, obteniendo información meteorológica horaria correspondiente a la ciudad de **Cuenca, Ecuador** durante un período de siete días.
+
+El análisis contempla las siguientes etapas:
+
+- Adquisición de datos mediante una API.
+- Procesamiento y transformación de información.
+- Almacenamiento de datos en formato CSV.
+- Visualización mediante gráficos.
+- Análisis de resultados mediante preguntas planteadas.
 
 ---
 
@@ -16,38 +24,42 @@ El análisis contempla la extracción, transformación, almacenamiento y visuali
 
 ## Objetivo general
 
-Obtener y analizar datos meteorológicos mediante una API, aplicando técnicas de procesamiento y visualización de datos con Python.
+Realizar la adquisición y análisis de datos meteorológicos utilizando una API pública, aplicando herramientas de programación en Python para procesar, visualizar e interpretar la información obtenida.
 
 ## Objetivos específicos
 
-- Consumir información meteorológica desde una API pública.
-- Transformar los datos obtenidos en una estructura adecuada para análisis.
-- Almacenar los datos en un archivo local.
+- Obtener datos meteorológicos mediante la API Open-Meteo.
+- Procesar la información utilizando estructuras de análisis de datos.
 - Generar visualizaciones utilizando Matplotlib.
-- Analizar relaciones entre variables meteorológicas y responder preguntas basadas en los datos.
+- Identificar patrones de comportamiento entre variables meteorológicas.
+- Responder preguntas de análisis basadas en los datos obtenidos.
 
 ---
 
 # 3. Fuente de datos
 
-Los datos utilizados fueron obtenidos mediante la API gratuita:
+Los datos fueron obtenidos mediante la API gratuita:
 
-Open-Meteo  
+**Open-Meteo**
+
 https://open-meteo.com/
 
 La ubicación seleccionada para el análisis fue:
 
-**Ciudad:** Cuenca, Ecuador  
-**Latitud:** -2.8953  
-**Longitud:** -78.9963
+**Ciudad:** Cuenca, Ecuador
 
-La consulta fue realizada utilizando información meteorológica horaria.
+**Coordenadas utilizadas:**
+
+- Latitud: -2.8953
+- Longitud: -78.9963
+
+Los datos fueron consultados con una frecuencia horaria.
 
 ---
 
 # 4. Variables analizadas
 
-Las variables seleccionadas para el estudio fueron:
+Para el desarrollo del análisis se utilizaron las siguientes variables meteorológicas:
 
 | Variable | Descripción | Unidad |
 |---|---|---|
@@ -60,41 +72,46 @@ Las variables seleccionadas para el estudio fueron:
 
 # 5. Preguntas de análisis
 
-Para orientar el análisis se plantearon las siguientes preguntas:
+Para orientar el estudio de los datos se plantearon las siguientes preguntas:
 
 ### Pregunta 1
+
 ¿Cómo varía la temperatura en Cuenca durante los siete días analizados y cuáles son las temperaturas máxima y mínima?
 
 ### Pregunta 2
+
 ¿Cómo se comporta la precipitación durante el período analizado y cuál es la precipitación acumulada?
 
 ### Pregunta 3
+
 ¿Qué relación existe entre la temperatura y la humedad relativa durante el período analizado?
 
 ---
 
 # 6. Metodología aplicada
 
-El flujo desarrollado fue:
+El flujo desarrollado para el análisis fue:
 
 ---
 
 # 7. Adquisición y procesamiento de datos
 
-La extracción de información fue realizada mediante Python utilizando la librería:
+La adquisición de datos fue realizada mediante Python utilizando la librería:
 
 - `openmeteo_requests`
 
-Posteriormente los datos fueron procesados utilizando:
+Posteriormente, los datos fueron procesados utilizando:
 
 - `Pandas`
 
-El conjunto obtenido contiene:
+El conjunto de datos obtenido contiene:
 
 - **168 registros horarios**
 - Correspondientes a **7 días de información meteorológica**
 
 Los datos procesados fueron almacenados localmente en:
+
+Este archivo contiene la información utilizada posteriormente para el análisis y generación de gráficos.
 
 ---
 
@@ -104,7 +121,7 @@ Para analizar el comportamiento de las variables meteorológicas se generaron ci
 
 - `Matplotlib`
 
-Las gráficas desarrolladas fueron:
+Las visualizaciones desarrolladas fueron:
 
 1. Temperatura horaria.
 2. Humedad relativa horaria.
@@ -114,11 +131,53 @@ Las gráficas desarrolladas fueron:
 
 ---
 
-# 9. Resultados obtenidos
+# 9. Visualizaciones generadas
 
-## 9.1 Análisis de temperatura
+## 9.1 Temperatura horaria
 
-Durante el período analizado:
+La gráfica permite observar la variación de la temperatura durante el período analizado.
+
+![Temperatura](graficas/01_temperatura.png)
+
+---
+
+## 9.2 Humedad relativa horaria
+
+Esta visualización muestra el comportamiento de la humedad relativa durante las diferentes horas del período estudiado.
+
+![Humedad](graficas/02_humedad.png)
+
+---
+
+## 9.3 Precipitación horaria
+
+La gráfica permite identificar los momentos donde se presentaron mayores niveles de precipitación.
+
+![Precipitación](graficas/03_precipitacion.png)
+
+---
+
+## 9.4 Velocidad del viento horaria
+
+Esta gráfica representa el comportamiento de la velocidad del viento durante el período analizado.
+
+![Velocidad del viento](graficas/04_viento.png)
+
+---
+
+## 9.5 Relación entre temperatura y humedad relativa
+
+Mediante un gráfico de dispersión se analizó la relación existente entre temperatura y humedad relativa.
+
+![Relación temperatura humedad](graficas/05_temperatura_humedad.png)
+
+---
+
+# 10. Resultados obtenidos
+
+## Pregunta 1: Variación de temperatura
+
+Durante el período analizado se obtuvieron los siguientes resultados:
 
 - Temperatura máxima registrada: **23,00 °C**
 - Temperatura mínima registrada: **8,70 °C**
@@ -127,81 +186,51 @@ La diferencia entre ambos valores representa una amplitud térmica de:
 
 **14,30 °C**
 
-### Visualización
-
-![Temperatura](graficas/01_temperatura.png)
-
+Estos resultados muestran la variación existente entre las temperaturas más bajas y más altas durante el período analizado.
 
 ---
 
-## 9.2 Análisis de humedad relativa
+## Pregunta 2: Comportamiento de la precipitación
 
-La humedad relativa permitió observar el comportamiento de la humedad durante las diferentes horas del período analizado.
-
-### Visualización
-
-![Humedad](graficas/02_humedad.png)
-
-
----
-
-## 9.3 Análisis de precipitación
-
-Durante los siete días analizados:
+Durante los siete días analizados se obtuvo:
 
 - Precipitación acumulada: **33,70 mm**
-- Mayor precipitación horaria registrada: **4,70 mm**
+- Mayor precipitación registrada en una hora: **4,70 mm**
 
-La precipitación presentó variaciones durante el período, concentrándose en determinadas horas.
-
-### Visualización
-
-![Precipitación](graficas/03_precipitacion.png)
-
+La precipitación presentó variaciones durante el período, concentrándose en determinadas horas con mayores acumulaciones.
 
 ---
 
-## 9.4 Análisis de velocidad del viento
+## Pregunta 3: Relación entre temperatura y humedad
 
-La velocidad del viento fue analizada para identificar sus variaciones horarias durante el período estudiado.
+Para analizar la relación entre ambas variables se calculó el coeficiente de correlación:
 
-### Visualización
+**Coeficiente de correlación: -0,951**
 
-![Viento](graficas/04_viento.png)
+Este resultado representa una relación lineal negativa fuerte entre temperatura y humedad relativa.
 
-
----
-
-## 9.5 Relación entre temperatura y humedad
-
-Para analizar la relación entre variables se calculó el coeficiente de correlación:
-
-**Correlación = -0,951**
-
-Este resultado indica una relación lineal negativa fuerte entre temperatura y humedad relativa.
-
-Durante el período analizado:
+Durante el período analizado se observa que:
 
 - Cuando aumenta la temperatura, la humedad relativa tiende a disminuir.
 - Cuando disminuye la temperatura, la humedad relativa tiende a aumentar.
 
-### Visualización
+---
 
-![Relación temperatura humedad](graficas/05_temperatura_humedad.png)
+# 11. Conclusiones
+
+El desarrollo del proyecto permitió aplicar un proceso completo de análisis de datos, iniciando desde la adquisición de información mediante una API pública hasta la generación de resultados mediante técnicas de visualización.
+
+El uso de Python permitió automatizar la extracción, transformación y análisis de los datos meteorológicos obtenidos desde Open-Meteo.
+
+Las visualizaciones generadas facilitaron la identificación de patrones en variables como temperatura, humedad, precipitación y velocidad del viento.
+
+Finalmente, el análisis de correlación permitió identificar una relación inversa entre temperatura y humedad relativa durante el período estudiado.
 
 ---
 
-# 10. Conclusiones
+# 12. Herramientas utilizadas
 
-El desarrollo del proyecto permitió implementar un flujo completo de análisis de datos meteorológicos, iniciando desde la adquisición mediante una API hasta la interpretación de resultados mediante técnicas de visualización.
-
-El uso de Python facilitó la automatización del proceso de extracción, transformación y análisis de información, mientras que las visualizaciones permitieron identificar patrones en las variables meteorológicas estudiadas.
-
-Finalmente, la correlación encontrada entre temperatura y humedad permitió evidenciar una relación inversa entre ambas variables durante el período analizado.
-
----
-
-# 11. Herramientas utilizadas
+Las herramientas utilizadas fueron:
 
 - Python
 - Pandas
@@ -212,4 +241,15 @@ Finalmente, la correlación encontrada entre temperatura y humedad permitió evi
 
 ---
 
-# 12. Estructura del proyecto
+# 13. Estructura del proyecto
+
+---
+
+# 14. Repositorio
+
+El proyecto completo se encuentra disponible en GitHub, incluyendo:
+
+- Código fuente.
+- Datos utilizados.
+- Visualizaciones.
+- Documentación del análisis.
