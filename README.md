@@ -137,7 +137,7 @@ La adquisición de datos fue realizada mediante Python utilizando la librería:
 
 - `openmeteo_requests`
 
-Posteriormente, los datos fueron procesados utilizando:
+Posteriormente, los datos fueron procesados utilizando la librería:
 
 - `Pandas`
 
@@ -146,11 +146,11 @@ El conjunto de datos obtenido contiene:
 - **168 registros horarios**
 - Correspondientes a **7 días de información meteorológica**
 
-Los datos procesados fueron almacenados localmente en:
+Los datos procesados fueron almacenados localmente en el archivo:
 
-Este archivo contiene la información utilizada posteriormente para el análisis y generación de gráficos.
+`datos_clima_cuenca.csv`
 
----
+Este archivo contiene la información utilizada posteriormente para el análisis y la generación de las visualizaciones.
 
 # 8. Visualización de datos
 
